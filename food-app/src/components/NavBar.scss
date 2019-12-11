@@ -1,0 +1,46 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+
+    .logo{
+        h1{
+            font-family: 'Andale Mono';
+            font-size: 45px;
+            color: turquoise;
+        }
+    }
+
+    .nav {
+        margin: 0;
+        padding: 0;
+        height: 64px;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: black;
+        
+
+        li > a {
+            color: black;
+            text-decoration: none;
+            padding: 24px;
+            height: 16px;
+            font-family: 'Marker Felt';
+            font-size: 22px;
+          }
+
+        li > a:hover{
+            color: turquoise;
+        }
+          
+        li > a.activeNavButton {
+            background-color: indianred;
+            color: white;
+            
+          }
+      }
+}
+

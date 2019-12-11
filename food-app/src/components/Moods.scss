@@ -1,0 +1,28 @@
+body {
+    // background-color: turquoise;
+
+    .mood-query{
+        display: flex;
+        align-items: center;
+        background-color: turquoise;
+        // margin: -10px;
+        padding-left: 20px;
+        
+        h3{
+            font-family: 'Marker Felt';
+        }
+    
+        .moods{
+            display: flex;
+            width: 10%;
+            margin-left: 20px;
+        
+            img {
+                width: 50%;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+
