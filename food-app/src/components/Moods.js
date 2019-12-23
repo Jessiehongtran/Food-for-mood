@@ -8,7 +8,17 @@ const Moods = () => {
         <div class="mood-query">
             <h3>How are you feeling today?</h3>
             <div class="moods">
-                {emoji.map(icon => (<img src={icon}/>))}
+                {emoji.map(icon => (
+                    <div className="container">
+                        <img className="image" src={icon.image}/>
+                        {/* <img className="image" src="https://res.cloudinary.com/dfulxq7so/image/upload/v1576009802/iconfinder_4_Emoji_exhausted_emoticon_tired_emoji_tired_face_3129749_1_kntuhd.png"/>  */}
+
+                        <div className="overlay">
+                            <div className="text">{icon.name}</div>
+                            {/* <div className="text">Awesome</div> */}
+                        </div>
+                    </div>
+                ))} 
             </div>
             {/* <select id="moods">
                 <option>Awesome</option>
