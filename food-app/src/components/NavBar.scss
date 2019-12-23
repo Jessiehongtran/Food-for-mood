@@ -6,10 +6,21 @@
     
 
     .logo{
+        display: flex;
+        flex-direction: column;
+       
+
         h1{
             font-family: 'Andale Mono';
             font-size: 45px;
             color: turquoise;
+        }
+
+        p{
+            margin-top: -20px;
+            font-family: 'Andale Mono';
+            font-size: 14px;
+            color: black;
         }
     }
 

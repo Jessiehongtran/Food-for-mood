@@ -8,7 +8,7 @@ const NavBar = () => {
         <div className="navBar">
             <div className="logo">
                 <h1>FOOD4MOOD</h1>
-                {/* <p>Good food, good mood</p> */}
+                <p>Share your mood to find your food.</p>
             </div>
             <ul className="nav">
                 <li>

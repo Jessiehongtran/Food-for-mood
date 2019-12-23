@@ -9,7 +9,15 @@ const Foods = () => {
             {foods.map(food => (
                 <div className="eachfood">
                     <img className="foodpic" src={food.image}/>
-                    <p className="caption">{food.caption}</p>
+                    <div className="info">
+                        <div className="caption">
+                            <p>{food.caption}</p>
+                        </div>
+                        <div className="mood">
+                            <p>4</p>
+                            <img src={food.mood}/>
+                        </div>
+                    </div>
                 </div>
                 )
             )}
