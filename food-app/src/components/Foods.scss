@@ -30,13 +30,16 @@
                 font-size: 16px;
                 color: lightgoldenrodyellow;
                 background-color: red;
+                padding-left: 5px;
+                padding-right: 5px;
             }
 
             .mood {
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
-                // background-color:  orange;
+                // // background-color:  orange;
+                padding-right: 2px;
 
                 p{
                     font-family: 'Marker Felt';
