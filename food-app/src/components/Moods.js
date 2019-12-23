@@ -1,33 +1,12 @@
-import React, {useState} from "react";
+import React from "react";
 import "./Moods.scss"
-import {emoji} from "../data/emoji"
 
 const Moods = (props) => {
-    // const [awesomeMood, setAwesomeMood] = useState(false)
-    // const [greatMood, setGreatMood] = useState(false)
-    // const [okayMood, setOkayMood] = useState(false)
-    // const [ehhMood, setEhhMood] = useState(false)
-    // const [badMood, setBadMood] = useState(false)
-
-    // console.log('awesomeMood', awesomeMood)
-    // console.log('greatMood', greatMood)
-    // console.log('okayMood', okayMood)
-    // console.log('ehhMood', ehhMood)
-    // console.log('badMood', badMood)
 
     return (
         <div class="mood-query">
             <h3>How are you feeling today?</h3>
             <div class="moods">
-                {/* {emoji.map(icon => (
-                    <div className="container">
-                        <img className="image" src={icon.image}/>
-                        <div className="overlay">
-                            <div className="text">{icon.name}</div>
-                        </div>
-                    </div>
-                ))}  */}
-
                 <div className="container">
                     <img className="image"  src="https://res.cloudinary.com/dfulxq7so/image/upload/v1576008467/iconfinder_1_Emoji_happy_smiley_surprised_emoticon_3129756_fxxwqb.png"/>
                     <div className="overlay">
