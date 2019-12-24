@@ -1,7 +1,9 @@
 import React, {useState} from "react";
-import Moods from "./components/Moods"
-import NavBar from "./components/NavBar"
-import Foods from "./components/Foods"
+import Moods from "./components/Moods";
+import NavBar from "./components/NavBar";
+import Foods from "./components/Foods";
+import FoodDetail from "./components/FoodDetail";
+import {Route} from "react-router-dom";
 
 function App(){
     const [awesomeMood, setAwesomeMood] = useState(false)
@@ -9,6 +11,7 @@ function App(){
     const [okayMood, setOkayMood] = useState(false)
     const [ehhMood, setEhhMood] = useState(false)
     const [badMood, setBadMood] = useState(false)
+    const [selectedPic, setSelectedPic] = useState("")
 
     console.log('awesomeMood', awesomeMood)
     console.log('greatMood', greatMood)
@@ -16,24 +19,51 @@ function App(){
     console.log('ehhMood', ehhMood)
     console.log('badMood', badMood)
 
+    
 
     return (
         <div>
-            <Moods
-                setAwesomeMood = {setAwesomeMood}
-                setGreatMood = {setGreatMood}
-                setOkayMood = {setOkayMood}
-                setEhhMood = {setEhhMood}
-                setBadMood = {setBadMood}
+
+            <Route 
+                exact path="/"
+                render= { props => {
+                    return (
+                        <>
+                            <Moods
+                                {...props}
+                                setAwesomeMood = {setAwesomeMood}
+                                setGreatMood = {setGreatMood}
+                                setOkayMood = {setOkayMood}
+                                setEhhMood = {setEhhMood}
+                                setBadMood = {setBadMood}
+                            />
+                            <NavBar/>
+                            <Foods 
+                                {...props}
+                                awesomeMood = {awesomeMood}
+                                greatMood = {greatMood}
+                                okayMood = {okayMood}
+                                ehhMood = {ehhMood}
+                                badMood = {badMood}
+                                setSelectedPic = {setSelectedPic}
+                            />
+                        </>
+                    )
+                }}
             />
-            <NavBar/>
-            <Foods 
-                awesomeMood = {awesomeMood}
-                greatMood = {greatMood}
-                okayMood = {okayMood}
-                ehhMood = {ehhMood}
-                badMood = {badMood}
+
+            <Route 
+                path="/foodDetail"
+                render= { props => {
+                    return (
+                        <FoodDetail 
+                            {...props}
+                            selectedPic = {selectedPic}
+                        />
+                    )
+                }}
             />
+            
         </div>
     )
 }

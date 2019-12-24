@@ -1,9 +1,12 @@
 import React from 'react';
 
-const FoodDetail = () => {
+const FoodDetail = (props) => {
+    console.log('props in FoodDetail', props)
 
     return (
-        <div></div>
+        <div>
+
+        </div>
     )
 }
 

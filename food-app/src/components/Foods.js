@@ -10,7 +10,15 @@ const Foods = (props) => {
                 if (props.awesomeMood && food.mood == 1){
                     return (
                     <div className="eachfood">
-                        <img className="foodpic" src={food.image}/>
+                        <img 
+                            onClick= {event => {
+                                props.setSelectedPic(food)
+                                props.history.push('/foodDetail')
+                                }
+                            } 
+                            className="foodpic" 
+                            src={food.image}
+                        />
                         <div className="info">
                             <div className="caption">
                                 <p>{food.caption}</p>
@@ -26,7 +34,17 @@ const Foods = (props) => {
                 else if (props.greatMood && food.mood == 2){
                     return (
                     <div className="eachfood">
-                        <img className="foodpic" src={food.image}/>
+                        {/* <a href="http://www.google.com"> */}
+                            <img 
+                                className="foodpic" 
+                                src={food.image}
+                                onClick= {event => {
+                                    props.setSelectedPic(food)
+                                    props.history.push('/foodDetail')
+                                    }
+                                }
+                                />
+                        {/* </a> */}
                         <div className="info">
                             <div className="caption">
                                 <p>{food.caption}</p>
@@ -42,7 +60,17 @@ const Foods = (props) => {
                 else if (props.okayMood && food.mood == 3){
                     return (
                     <div className="eachfood">
-                        <img className="foodpic" src={food.image}/>
+                        {/* <a href="http://www.google.com"> */}
+                            <img 
+                                className="foodpic" 
+                                src={food.image}
+                                onClick= {event => {
+                                    props.setSelectedPic(food)
+                                    props.history.push('/foodDetail')
+                                    }
+                                }
+                                />
+                        {/* </a> */}
                         <div className="info">
                             <div className="caption">
                                 <p>{food.caption}</p>
@@ -58,7 +86,17 @@ const Foods = (props) => {
                 else if (props.ehhMood && food.mood == 4){
                     return (
                     <div className="eachfood">
-                        <img className="foodpic" src={food.image}/>
+                        {/* <a href="http://www.google.com"> */}
+                            <img 
+                                className="foodpic" 
+                                src={food.image}
+                                onClick= {event => {
+                                    props.setSelectedPic(food)
+                                    props.history.push('/foodDetail')
+                                    }
+                                }
+                                />
+                        {/* </a> */}
                         <div className="info">
                             <div className="caption">
                                 <p>{food.caption}</p>
@@ -74,7 +112,17 @@ const Foods = (props) => {
                 else if (props.badMood && food.mood == 5){
                     return (
                     <div className="eachfood">
-                        <img className="foodpic" src={food.image}/>
+                        {/* <a href="http://www.google.com"> */}
+                            <img 
+                                className="foodpic" 
+                                src={food.image}
+                                onClick= {event => {
+                                    props.setSelectedPic(food)
+                                    props.history.push('/foodDetail')
+                                    }
+                                }
+                                />
+                        {/* </a> */}
                         <div className="info">
                             <div className="caption">
                                 <p>{food.caption}</p>
