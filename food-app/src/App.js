@@ -23,7 +23,6 @@ function App(){
 
     return (
         <div>
-
             <Route 
                 exact path="/"
                 render= { props => {
@@ -38,6 +37,7 @@ function App(){
                                 setBadMood = {setBadMood}
                             />
                             <NavBar/>
+                            
                             <Foods 
                                 {...props}
                                 awesomeMood = {awesomeMood}
@@ -56,10 +56,15 @@ function App(){
                 path="/foodDetail"
                 render= { props => {
                     return (
-                        <FoodDetail 
-                            {...props}
-                            selectedPic = {selectedPic}
-                        />
+                        <>
+                            <NavBar/>
+                            <FoodDetail 
+                                {...props}
+                                selectedPic = {selectedPic}
+                            />
+
+                            
+                        </>
                     )
                 }}
             />
