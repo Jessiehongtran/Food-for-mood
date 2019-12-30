@@ -28,16 +28,32 @@ const FoodDetail = (props) => {
                     </TabPanel>
                     
                     <TabPanel className="make-yourself">
-                        {props.selectedPic.instruction.ingredients.map(ingre_image => 
+                        <div className="ingredients">
+                            <h3>Ingredients</h3>
                             <div className="ingredient-list">
-                                <img 
-                                    className = "ingredient-pic"
-                                    src={ingre_image[0]}
-                                />
-                                <p className="ingredient-name">{ingre_image[1]}</p>
-                                <p className="measurement">{ingre_image[2]}</p>
+                                {props.selectedPic.instruction.ingredients.map(ingre_image => 
+                                    <div className="each-ingredient">
+                                        <img 
+                                            className = "ingredient-pic"
+                                            src={ingre_image[0]}
+                                        />
+                                        <p className="ingredient-name">{ingre_image[1]}</p>
+                                        <p className="measurement">{ingre_image[2]}</p>
+                                    </div>
+                            )}
                             </div>
-                        )}
+                        </div>
+                        <div className="directions">
+                            <h3>Directions</h3>
+                            <div className="direction-list">
+                                {props.selectedPic.instruction.directions.map(direction => 
+                                <dl>
+                                    <dd>{direction}</dd>
+                                </dl>
+
+                                )}
+                            </div>
+                        </div>
                         
                     </TabPanel>
                 </Tabs>

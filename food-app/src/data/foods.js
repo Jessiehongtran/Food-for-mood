@@ -18,6 +18,12 @@ export const foods = [
                 ["https://res.cloudinary.com/dfulxq7so/image/upload/v1577232545/2cd43b_23cf35dbf8224e738397894957e4981b_mv2_y8vmfa.png","all-purpose flour", "3 cups"], 
                 ["https://res.cloudinary.com/dfulxq7so/image/upload/v1577232595/imgres_1_f6fdaf.jpg","semisweet chocolate chips", "2 cups"], 
                 ["https://res.cloudinary.com/dfulxq7so/image/upload/v1577232635/Capture-30_lkf5p2.png","chopped walnuts", "1 cup"]
+            ],
+            directions:
+            [
+                "Preheat oven to 375 degrees F (190 degrees C). In a small bowl, stir together flour, baking soda, and baking powder. Set aside.",
+                "In a large bowl, cream together the butter and sugar until smooth. Beat in egg and vanilla. Gradually blend in the dry ingredients. Roll rounded teaspoonfuls of dough into balls, and place onto ungreased cookie sheets.",
+                "Bake 8 to 10 minutes in the preheated oven, or until golden. Let stand on cookie sheet two minutes before removing to cool on wire racks."
             ]
         }
     },
