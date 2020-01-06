@@ -3,7 +3,7 @@ export const foods = [
         image: "https://res.cloudinary.com/dfulxq7so/image/upload/v1576022764/BENEO_Bakery_cookies_in_yellow_bowl-1024x681_w2m3rt.jpg",
         caption: "Somthing sweet for a salty day ;)",
         mood: 1,
-        description: "",
+        description: "It's much hard to be sad while eating a cookie!",
         instruction: {
             ingredients: 
             [

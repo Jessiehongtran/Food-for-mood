@@ -22,7 +22,7 @@ const FoodDetail = (props) => {
                     </TabList>
 
                     <TabPanel className="learn-more">
-                        <h2>This food is very good</h2>
+                        <h1>{props.selectedPic.description}</h1>
                     </TabPanel>
                     <TabPanel className="find-stop">
                     </TabPanel>

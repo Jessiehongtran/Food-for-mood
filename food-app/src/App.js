@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Foods from "./components/Foods";
 import FoodDetail from "./components/FoodDetail";
 import {Route} from "react-router-dom";
+import ImageUpload from "./components/ImageUpload"
 
 function App(){
     const [awesomeMood, setAwesomeMood] = useState(false)
@@ -64,6 +65,18 @@ function App(){
                             />
 
                             
+                        </>
+                    )
+                }}
+            />
+
+            <Route 
+                path="/imageUpload"
+                render= {props => {
+                    return (
+                        <>
+                            <NavBar />
+                            <ImageUpload/>
                         </>
                     )
                 }}
