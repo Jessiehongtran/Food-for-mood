@@ -7,7 +7,7 @@ import {Route} from "react-router-dom";
 import ImageUpload from "./components/ImageUpload"
 
 function App(){
-    const [awesomeMood, setAwesomeMood] = useState(false)
+    const [awesomeMood, setAwesomeMood] = useState(true)
     const [greatMood, setGreatMood] = useState(false)
     const [okayMood, setOkayMood] = useState(false)
     const [ehhMood, setEhhMood] = useState(false)

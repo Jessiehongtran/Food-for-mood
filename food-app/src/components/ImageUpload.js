@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import FireBase from 'react-file-base64';
 import {storage} from '../firebase-config';
-import MazeImg from '../../assets/maze.png';
+import MazeImg from '../assets/maze.png';
 
 // base api url being used
 const API_URL = "http://localhost:3000"
@@ -153,13 +153,11 @@ class ImageUpload extends Component {
             <p className="process__details">Upload image as Base64 directly to MongoDB database</p>
 
             <div className="process__upload-btn">
-              <FileBase type="file" multiple={false} onDone={this.getBaseFile.bind(this)} />
+              <FireBase type="file" multiple={false} onDone={this.getBaseFile.bind(this)} />
             </div>
             <img src={this.state.baseImage} alt="upload-image" className="process__image" />
           </div>
         </div>
-
-        <p className="main-credit">Created by <a href="#">Tarique Ejaz</a></p>
       </div>
     );
     }
