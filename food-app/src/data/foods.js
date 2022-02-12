@@ -1,7 +1,7 @@
 export const foods = [
     {
         image: "https://res.cloudinary.com/dfulxq7so/image/upload/v1576022764/BENEO_Bakery_cookies_in_yellow_bowl-1024x681_w2m3rt.jpg",
-        caption: "Somthing sweet for a salty day ;)",
+        caption: "Something sweet for a salty day ;)",
         mood: 1,
         description: "It's much hard to be sad while eating a cookie!",
         instruction: {
@@ -36,7 +36,7 @@ export const foods = [
     },
     {
         image: "https://res.cloudinary.com/dfulxq7so/image/upload/v1576022216/easy-pasta-skillet_nho2wo.jpg",
-        caption: "Somthing easy for a challenge.",
+        caption: "Something easy for a challenge.",
         mood: 3,
         description: "",
         instruction: ""
@@ -64,7 +64,7 @@ export const foods = [
     },
     {
         image:  "https://res.cloudinary.com/dfulxq7so/image/upload/v1576022575/meatball-bake-2_qxagat.jpg",
-        caption: "Somthing cheesy for rough love.",
+        caption: "Something cheesy for rough love.",
         mood: 2,
         description: "",
         instruction: ""
